@@ -2,15 +2,47 @@
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaFeatures": {
-      "jsx": true
+      "experimentalObjectRestSpread": true,
+      "impliedStrict": true,
+      "classes": true
     }
   },
   "rules": {
-    "no-unused-vars": 0,
-    "max-len": [1, 80, 2, { "ignoreComments": true }],
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    "no-unused-vars": 1,
+    "max-len": [
+      1,
+      80,
+      2,
+      {
+        "ignoreComments": true
+      }
+    ],
+    "react/jsx-filename-extension": [
+      2,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "printWidth": 80
+      }
+    ]
   },
-  "extends": "airbnb",
+  "plugins": [
+    "prettier"
+  ],
+  "extends": [
+    "airbnb",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended"
+  ],
   "env": {
     "browser": true,
     "node": true

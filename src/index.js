@@ -4,6 +4,6 @@ import Hello from './components/Hello';
 
 ReactDOM.render(
   <Hello title="Minimal React Webpack Babel Eslint Setup" />,
-  document.getElementById('app'),
+  document.getElementById('app')
 );
 module.hot.accept();
