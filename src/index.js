@@ -4,7 +4,11 @@ import PropTypes from 'prop-types';
 
 class Hello extends React.Component {
   render() {
-    return <h1>{this.props.title}</h1>;
+    return (
+      <div>
+        <h4>{this.props.title}</h4>
+      </div>
+    );
   }
 }
 
