@@ -1,7 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 
-const title = 'Minimal React Webpack Babel Eslint Setup';
+class Hello extends React.Component {
+  render() {
+    return <h1>{this.props.title}</h1>;
+  }
+}
 
-ReactDOM.render(<div>{title}</div>, document.getElementById('app'));
+Hello.propTypes = {
+  title: PropTypes.string,
+};
+
+ReactDOM.render(
+  <Hello title="Minimal React Webpack Babel Eslint Setup" />,
+  document.getElementById('app'),
+);
 module.hot.accept();
