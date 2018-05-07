@@ -1,0 +1,12 @@
+{
+  "name": "minimal-react-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Arkadiusz Fijalkowski <fijalkowski.arek@gmail.com>",
+  "license": "MIT"
+}
