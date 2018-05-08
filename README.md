@@ -4,19 +4,19 @@ If you are reading this, it means you don't have enough of React boilerplates :c
 
 ## Installation
 
-1. git-clone it
+1. hug it
 ```
 git clone https://github.com/ekthelion/yet-another-react-boilerplate
 ```
-2. enter it
+2. embrace it
 ```
 cd yet-another-react-boilerplate
 ```
-3. install it
+3. commit to it
 ```
 npm install
 ```
-4. run it 'n' enjoy it
+4. enjoy it
 ```
 npm start
 ```
