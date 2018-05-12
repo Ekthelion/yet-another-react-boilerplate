@@ -8,19 +8,23 @@ class App extends React.Component {
     this.state = {
       counter: 0,
     };
+
     this.doIncrement = this.doIncrement.bind(this);
     this.doDecrement = this.doDecrement.bind(this);
   }
+
   doIncrement() {
     this.setState(prevState => ({
       counter: prevState.counter + 1,
     }));
   }
+
   doDecrement() {
     this.setState(prevState => ({
       counter: prevState.counter - 1,
     }));
   }
+
   render() {
     const { counter } = this.state;
     return (
