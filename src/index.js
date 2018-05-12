@@ -1,9 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Hello from './components/Hello';
+import App from './App';
 
-ReactDOM.render(
-  <Hello title="Minimal React Webpack Babel Eslint Setup" />,
-  document.getElementById('app')
-);
+ReactDOM.render(<App />, document.getElementById('app'));
 module.hot.accept();

@@ -8,6 +8,10 @@
     }
   },
   "rules": {
+    "linebreak-style": [
+      "error",
+      "windows"
+    ],
     "no-unused-vars": 1,
     "max-len": [
       1,
