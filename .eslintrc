@@ -8,14 +8,11 @@
     }
   },
   "rules": {
-    "linebreak-style": [
-      "error",
-      "windows"
-    ],
+    "linebreak-style": ["error", "windows"],
     "no-unused-vars": 1,
     "max-len": [
       1,
-      80,
+      120,
       2,
       {
         "ignoreComments": true
@@ -24,10 +21,7 @@
     "react/jsx-filename-extension": [
       2,
       {
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
+        "extensions": [".js", ".jsx"]
       }
     ],
     "prettier/prettier": [
@@ -39,16 +33,11 @@
       }
     ]
   },
-  "plugins": [
-    "prettier"
-  ],
-  "extends": [
-    "airbnb",
-    "prettier",
-    "prettier/react"
-  ],
+  "plugins": ["prettier"],
+  "extends": ["airbnb", "prettier", "prettier/react"],
   "env": {
     "browser": true,
-    "node": true
+    "node": true,
+    "mocha": true
   }
 }
