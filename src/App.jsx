@@ -1,6 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+export const doIncrement = prevState => ({
+  counter: prevState.counter + 1,
+});
+
+export const doDecrement = prevState => ({
+  counter: prevState.counter - 1,
+});
+
 class App extends React.Component {
   constructor() {
     super();
@@ -14,15 +22,11 @@ class App extends React.Component {
   }
 
   doIncrement() {
-    this.setState(prevState => ({
-      counter: prevState.counter + 1,
-    }));
+    this.setState(doIncrement);
   }
 
   doDecrement() {
-    this.setState(prevState => ({
-      counter: prevState.counter - 1,
-    }));
+    this.setState(doDecrement);
   }
 
   render() {
@@ -41,7 +45,7 @@ class App extends React.Component {
   }
 }
 
-const Counter = ({ counter }) => <div>{counter}</div>;
+export const Counter = ({ counter }) => <div>{counter}</div>;
 
 Counter.defaultProps = {
   counter: 0,
